@@ -82,12 +82,12 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["edit"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciamento de Usuários</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleCrud.css">
 
 </head>
 <body>
     <div class="cad">
-        <h1>Gerenciamento de Usuários</h1>
+        <h1>Tela de administrador</h1>
         <?php if (!empty($mensagem)): ?>
             <p><?php echo $mensagem; ?></p>
         <?php endif; ?>
@@ -100,6 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["edit"])) {
             <label for="senha">Senha: </label>
             <input type="password" id="senha" name="senha" value="" ><br>
             <button type="submit">Enviar</button>
+            <a href="cadastro.php" class="button">Tela Inicial</a>
         </form>
     </div>
     <div class="lista">

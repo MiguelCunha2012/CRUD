@@ -38,6 +38,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="styleCadastro.css">
 </head>
 <body>
     <div class="cad">
@@ -53,6 +54,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
             <label for="senha">Senha: </label>
             <input type="password" id="senha" name="senha" required><br>
             <button type="submit">Enviar</button>
+            <a href="crud.php" class="button">ADM</a>
         </form>
     </div>
     </div>
